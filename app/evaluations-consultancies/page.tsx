@@ -119,7 +119,7 @@ export default function EvaluationsPage() {
       {/* Hero */}
       <section className="bg-secondary/30 py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h1 className="font-serif text-4xl font-bold text-foreground md:text-5xl lg:text-6xl">
+          <h1 className="font-serif text-4xl font-bold text-primary md:text-5xl lg:text-6xl">
             Evaluations & Consultancies
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">

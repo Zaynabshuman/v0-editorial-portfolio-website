@@ -91,7 +91,7 @@ export default function CapacityBuildingPage() {
                 <span className="text-sm font-medium uppercase tracking-widest text-primary">
                   Training Programs
                 </span>
-                <h2 className="mt-2 font-serif text-2xl font-bold text-foreground md:text-3xl">
+                <h2 className="mt-2 font-serif text-2xl font-bold text-primary md:text-3xl">
                   Featured Initiatives
                 </h2>
               </div>
@@ -142,7 +142,7 @@ export default function CapacityBuildingPage() {
 
               {/* Right - Content */}
               <div className="flex flex-col justify-center">
-                <h3 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+                <h3 className="font-serif text-3xl font-bold text-primary md:text-4xl lg:text-5xl">
                   {trainings[activeIndex].title}
                 </h3>
                 <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
