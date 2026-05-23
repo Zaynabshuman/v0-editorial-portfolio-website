@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '@/components/header'
-import { ContactSection } from '@/components/contact-section'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { useState } from 'react'
 
@@ -196,7 +195,6 @@ export default function CapacityBuildingPage() {
           </div>
         </section>
       </main>
-      <ContactSection />
     </>
   )
 }
