@@ -1,86 +1,93 @@
-import { Mail, Linkedin, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 import Link from 'next/link'
 
 export function ContactSection() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer id="contact" className="bg-primary py-16 text-primary-foreground">
+    <footer id="contact" className="bg-primary py-12 text-primary-foreground">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* Main Content */}
-        <div className="grid gap-12 lg:grid-cols-2">
-          {/* Left - Brand & Contact Details */}
+        {/* Main Content - Two columns */}
+        <div className="flex flex-col justify-between gap-10 lg:flex-row lg:items-start">
+          {/* Left Side */}
           <div>
+            {/* Name & Title */}
             <Link href="/" className="block">
-              <h2 className="font-serif text-xl font-semibold tracking-wide text-primary-foreground">
+              <h2 className="font-serif text-xl font-semibold tracking-wider text-primary-foreground">
                 ZAYNAB SHUMAN
               </h2>
-              <p className="mt-1 text-xs uppercase tracking-[0.2em] text-primary-foreground/70">
+              <p className="mt-1 text-[10px] uppercase tracking-[0.15em] text-primary-foreground/70">
                 Programme Quality & MEAL Specialist
               </p>
             </Link>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-primary-foreground/80">
-              Supporting organizations through evidence-informed decision-making 
-              and robust MEAL systems.
-            </p>
 
-            {/* Contact Details */}
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <a
-                href="mailto:zaynabshuman@outlook.com"
-                className="flex items-center gap-3 text-sm text-primary-foreground/80 transition-colors hover:text-primary-foreground"
-              >
-                <Mail className="h-4 w-4" />
-                zaynabshuman@outlook.com
-              </a>
-              <a
-                href="https://www.linkedin.com/in/zaynab-shuman-43356ab1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-sm text-primary-foreground/80 transition-colors hover:text-primary-foreground"
-              >
-                <Linkedin className="h-4 w-4" />
-                /in/zaynab-shuman
-              </a>
-              <div className="flex items-center gap-3 text-sm text-primary-foreground/80">
-                <MapPin className="h-4 w-4" />
-                Beirut, Lebanon
+            {/* Navigation Links */}
+            <nav className="mt-6">
+              <ul className="flex flex-wrap items-center gap-x-1 text-sm">
+                <li>
+                  <Link href="/" className="text-primary-foreground/90 transition-colors hover:text-primary-foreground">
+                    Home
+                  </Link>
+                </li>
+                <li className="text-primary-foreground/50">|</li>
+                <li>
+                  <Link href="/#about" className="text-primary-foreground/90 transition-colors hover:text-primary-foreground">
+                    About
+                  </Link>
+                </li>
+                <li className="text-primary-foreground/50">|</li>
+                <li>
+                  <Link href="/#expertise" className="text-primary-foreground/90 transition-colors hover:text-primary-foreground">
+                    Areas of Expertise
+                  </Link>
+                </li>
+                <li className="text-primary-foreground/50">|</li>
+                <li>
+                  <Link href="/evaluations-consultancies" className="text-primary-foreground/90 transition-colors hover:text-primary-foreground">
+                    Portfolio
+                  </Link>
+                </li>
+                <li className="text-primary-foreground/50">|</li>
+                <li>
+                  <Link href="/capacity-building" className="text-primary-foreground/90 transition-colors hover:text-primary-foreground">
+                    Capacity Building
+                  </Link>
+                </li>
+                <li className="text-primary-foreground/50">|</li>
+                <li>
+                  <Link href="#contact" className="text-primary-foreground/90 transition-colors hover:text-primary-foreground">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+
+            {/* Copyright */}
+            <p className="mt-6 text-xs text-primary-foreground/60">
+              Copyright © {currentYear}
+            </p>
+          </div>
+
+          {/* Right Side - Contact Details */}
+          <div className="flex flex-col gap-4">
+            {/* Location */}
+            <div className="flex items-center gap-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground/20">
+                <MapPin className="h-4 w-4 text-primary-foreground" />
               </div>
-              <a
-                href="tel:+96181819626"
-                className="flex items-center gap-3 text-sm text-primary-foreground/80 transition-colors hover:text-primary-foreground"
-              >
-                <Phone className="h-4 w-4" />
-                +961 81819626
-              </a>
+              <span className="text-sm text-primary-foreground">Lebanon, Beirut</span>
             </div>
-          </div>
 
-          {/* Right - CTA */}
-          <div className="flex flex-col justify-center lg:items-end lg:text-right">
-            <h3 className="text-xs font-medium uppercase tracking-wider text-primary-foreground/70">
-              Available for consultancy
-            </h3>
-            <p className="mt-3 max-w-sm text-sm text-primary-foreground/80 lg:ml-auto">
-              Open to new opportunities in programme quality, MEAL, and adaptive management.
-            </p>
-            <Link
+            {/* Email */}
+            <a 
               href="mailto:zaynabshuman@outlook.com"
-              className="mt-6 inline-block border border-primary-foreground/40 bg-transparent px-6 py-2.5 text-xs font-medium uppercase tracking-wider text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary"
+              className="flex items-center gap-4 transition-opacity hover:opacity-80"
             >
-              Get in Touch
-            </Link>
-          </div>
-        </div>
-
-        {/* Bottom bar */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-primary-foreground/20 pt-6 md:flex-row">
-          <p className="text-xs text-primary-foreground/60">
-            © {currentYear} Zaynab Shuman. All rights reserved.
-          </p>
-          <div className="flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary-foreground" />
-            <span className="text-xs text-primary-foreground/60">Beirut, Lebanon</span>
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground/20">
+                <Mail className="h-4 w-4 text-primary-foreground" />
+              </div>
+              <span className="text-sm text-primary-foreground">zaynabshuman@outlook.com</span>
+            </a>
           </div>
         </div>
       </div>
