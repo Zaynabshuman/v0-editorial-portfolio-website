@@ -23,11 +23,11 @@ export function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="block">
-              <h1 className="font-serif text-xl font-semibold tracking-wide text-foreground md:text-2xl">
+              <h1 className="font-serif text-xl font-bold tracking-wide text-foreground md:text-2xl">
                 ZAYNAB SHUMAN
               </h1>
-              <p className="mt-0.5 text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground md:text-xs">
-                Programme Quality & MEAL Specialist
+              <p className="mt-0.5 text-[10px] font-bold uppercase tracking-[0.15em] text-primary md:text-xs">
+                Programme Quality, MEAL & Adaptive Management Specialist
               </p>
             </Link>
           </div>
