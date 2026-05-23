@@ -1,4 +1,4 @@
-import { Mail, Linkedin, MapPin } from 'lucide-react'
+import { Mail, Linkedin, MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
 
 export function ContactSection() {
@@ -30,10 +30,10 @@ export function ContactSection() {
                     Email
                   </p>
                   <Link
-                    href="mailto:hello@zaynabshuman.com"
+                    href="mailto:zaynabshuman@outlook.com"
                     className="text-foreground transition-colors hover:text-primary"
                   >
-                    hello@zaynabshuman.com
+                    zaynabshuman@outlook.com
                   </Link>
                 </div>
               </div>
@@ -47,12 +47,12 @@ export function ContactSection() {
                     LinkedIn
                   </p>
                   <Link
-                    href="https://linkedin.com/in/zaynabshuman"
+                    href="https://www.linkedin.com/in/zaynab-shuman-43356ab1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-foreground transition-colors hover:text-primary"
                   >
-                    /in/zaynabshuman
+                    /in/zaynab-shuman-43356ab1
                   </Link>
                 </div>
               </div>
@@ -65,7 +65,24 @@ export function ContactSection() {
                   <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                     Location
                   </p>
-                  <p className="text-foreground">MENA Region</p>
+                  <p className="text-foreground">Beirut, Lebanon</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="flex h-12 w-12 items-center justify-center bg-secondary">
+                  <Phone className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                    Phone
+                  </p>
+                  <Link
+                    href="tel:+96181819626"
+                    className="text-foreground transition-colors hover:text-primary"
+                  >
+                    +961 81819626
+                  </Link>
                 </div>
               </div>
             </div>

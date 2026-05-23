@@ -64,7 +64,7 @@ export function Footer() {
                 </li>
                 <li>
                   <Link 
-                    href="https://linkedin.com/in/zaynabshuman" 
+                    href="https://www.linkedin.com/in/zaynab-shuman-43356ab1" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-background/80 transition-colors hover:text-background"
@@ -100,7 +100,7 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            <span className="text-xs text-background/50">MENA Region</span>
+            <span className="text-xs text-background/50">Beirut, Lebanon</span>
           </div>
         </div>
       </div>
