@@ -27,11 +27,8 @@ export function ProfessionalHighlights() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-medium uppercase tracking-[0.25em] text-primary">
+          <h3 className="font-serif text-3xl font-bold text-foreground md:text-4xl">
             Professional Highlights
-          </span>
-          <h3 className="mt-4 font-serif text-3xl font-semibold text-foreground md:text-4xl">
-            A Track Record of Excellence
           </h3>
         </div>
 
