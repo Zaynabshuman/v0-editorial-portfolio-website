@@ -9,30 +9,28 @@ export function AboutPreview() {
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
           {/* Portrait */}
           <div className="lg:col-span-4">
-            <div className="relative mx-auto aspect-[3/4] w-full max-w-[280px] overflow-hidden bg-background">
-              {/* Bold left-sided green frame */}
-              <div className="absolute -left-3 top-0 z-10 h-full w-1 bg-primary" />
-              <div className="absolute -left-3 top-0 z-10 h-1 w-12 bg-primary" />
-              <div className="absolute -left-3 bottom-0 z-10 h-1 w-12 bg-primary" />
+            <div className="relative mx-auto aspect-[3/4] w-full max-w-[280px]">
+              {/* Bold L-shaped green frame */}
+              <div className="absolute -left-3 -bottom-3 z-10 h-[calc(100%+12px)] w-1.5 bg-primary" />
+              <div className="absolute -left-3 -bottom-3 z-10 h-1.5 w-[60%] bg-primary" />
+              <div className="absolute -left-3 -top-3 z-10 h-1.5 w-[40%] bg-primary" />
               
               {/* Portrait Image */}
-              <Image
-                src="/images/zaynab-portrait.png"
-                alt="Zaynab Shuman"
-                fill
-                className="object-cover object-[center_20%]"
-              />
+              <div className="relative h-full w-full overflow-hidden">
+                <Image
+                  src="/images/zaynab-portrait.png"
+                  alt="Zaynab Shuman"
+                  fill
+                  className="object-cover object-[center_20%]"
+                />
+              </div>
             </div>
           </div>
 
           {/* Content */}
           <div className="lg:col-span-8">
-            <span className="text-xs font-medium uppercase tracking-[0.25em] text-primary">
+            <h3 className="font-serif text-3xl font-bold text-foreground md:text-4xl">
               About
-            </span>
-            
-            <h3 className="mt-4 font-serif text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
-              Dedicated to Impact
             </h3>
             
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
