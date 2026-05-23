@@ -88,7 +88,7 @@ const projects = [
   },
   {
     number: '10',
-    logo: '/images/logos/lrc.png',
+    logo: '/images/logos/adh.png',
     title: 'ADH Emergency WASH Project Evaluation',
     organization: 'Lebanese Red Cross – Lebanon',
     description: 'Directed a results-based evaluation aligned with ADH donor indicators for emergency WASH interventions, supporting programme performance analysis, accountability, and operational learning.',
