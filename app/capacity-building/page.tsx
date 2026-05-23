@@ -70,59 +70,21 @@ export default function CapacityBuildingPage() {
     <>
       <Header />
       <main className="bg-background">
-        {/* Hero Section - Full viewport with large typography */}
-        <section className="relative flex min-h-[70vh] flex-col justify-center overflow-hidden bg-background px-6 py-24 lg:px-8">
-          {/* Large background text */}
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden">
-            <span className="whitespace-nowrap font-serif text-[15vw] font-bold leading-none text-primary/[0.03]">
-              EMPOWER
-            </span>
-          </div>
-
-          <div className="relative mx-auto w-full max-w-7xl">
+        {/* Back Link */}
+        <section className="bg-background px-6 pt-32 lg:px-8">
+          <div className="mx-auto max-w-7xl">
             <Link
               href="/"
-              className="mb-12 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Home
             </Link>
-
-            <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-              {/* Left - Title */}
-              <div>
-                <h1 className="font-serif text-5xl font-bold leading-[1.1] text-foreground md:text-6xl lg:text-7xl">
-                  Capacity
-                  <br />
-                  <span className="text-primary">Building</span>
-                </h1>
-                <p className="mt-8 max-w-md text-lg leading-relaxed text-muted-foreground">
-                  Empowering teams through tailored learning experiences in MEAL, 
-                  programme quality, and adaptive management.
-                </p>
-              </div>
-
-              {/* Right - Stats in vertical layout */}
-              <div className="flex flex-col gap-8 lg:items-end">
-                <div className="group flex items-baseline gap-4">
-                  <span className="font-serif text-6xl font-bold text-primary transition-transform group-hover:scale-110 md:text-7xl">5+</span>
-                  <span className="text-sm uppercase tracking-widest text-muted-foreground">Programs</span>
-                </div>
-                <div className="group flex items-baseline gap-4">
-                  <span className="font-serif text-6xl font-bold text-primary transition-transform group-hover:scale-110 md:text-7xl">7+</span>
-                  <span className="text-sm uppercase tracking-widest text-muted-foreground">Years</span>
-                </div>
-                <div className="group flex items-baseline gap-4">
-                  <span className="font-serif text-6xl font-bold text-primary transition-transform group-hover:scale-110 md:text-7xl">4</span>
-                  <span className="text-sm uppercase tracking-widest text-muted-foreground">Organizations</span>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
         {/* Featured Training - Interactive Showcase */}
-        <section className="border-y border-border bg-secondary/30 py-24 lg:py-32">
+        <section className="border-b border-border bg-background py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             {/* Navigation */}
             <div className="mb-12 flex items-center justify-between">
@@ -211,50 +173,6 @@ export default function CapacityBuildingPage() {
                   }`}
                   aria-label={`Go to training ${i + 1}`}
                 />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* All Trainings List */}
-        <section className="py-24 lg:py-32">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="mb-16 font-serif text-3xl font-bold text-foreground md:text-4xl">
-              All Training Programs
-            </h2>
-
-            <div className="space-y-0">
-              {trainings.map((training, index) => (
-                <article
-                  key={index}
-                  className="group grid cursor-pointer gap-6 border-b border-border py-8 transition-all hover:bg-secondary/30 md:grid-cols-[80px_1fr_200px_120px] md:items-center md:gap-8 md:px-4"
-                  onClick={() => setActiveIndex(index)}
-                >
-                  {/* Number */}
-                  <span className="font-serif text-3xl font-bold text-primary/40 transition-colors group-hover:text-primary">
-                    {training.number}
-                  </span>
-
-                  {/* Title */}
-                  <div>
-                    <h3 className="font-serif text-xl font-semibold text-foreground transition-colors group-hover:text-primary">
-                      {training.title}
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">{training.organization}</p>
-                  </div>
-
-                  {/* Focus Areas */}
-                  <div className="hidden flex-wrap gap-2 md:flex">
-                    {training.focus.slice(0, 2).map((item, i) => (
-                      <span key={i} className="text-xs text-muted-foreground">
-                        {item}{i < 1 && ','}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Year */}
-                  <span className="text-sm font-medium text-primary">{training.year}</span>
-                </article>
               ))}
             </div>
           </div>
