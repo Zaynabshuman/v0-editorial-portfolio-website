@@ -29,15 +29,14 @@ export function HeroSection() {
                 <ArrowRight className="h-4 w-4" />
               </Link>
               
-              <Link
+              <a
                 href="/zaynab-shuman-cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Zaynab-Shuman-CV.pdf"
                 className="inline-flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-primary"
               >
                 Download CV
                 <Download className="h-4 w-4" />
-              </Link>
+              </a>
             </div>
           </div>
 
