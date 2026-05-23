@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 
 export function AboutPreview() {
@@ -10,16 +11,16 @@ export function AboutPreview() {
           <div className="lg:col-span-4">
             <div className="relative mx-auto aspect-square w-full max-w-xs overflow-hidden bg-background lg:max-w-none">
               {/* Editorial corner frame */}
-              <div className="absolute -left-2 -top-2 h-20 w-20 border-l border-t border-primary/40" />
-              <div className="absolute -bottom-2 -right-2 h-20 w-20 border-b border-r border-primary/40" />
+              <div className="absolute -left-2 -top-2 z-10 h-20 w-20 border-l border-t border-primary/40" />
+              <div className="absolute -bottom-2 -right-2 z-10 h-20 w-20 border-b border-r border-primary/40" />
               
-              {/* Placeholder */}
-              <div className="absolute inset-4 flex items-center justify-center bg-muted">
-                <div className="text-center">
-                  <div className="mx-auto mb-3 h-16 w-16 rounded-full bg-primary/10" />
-                  <p className="text-xs text-muted-foreground">About Portrait</p>
-                </div>
-              </div>
+              {/* Portrait Image */}
+              <Image
+                src="/images/zaynab-portrait.png"
+                alt="Zaynab Shuman"
+                fill
+                className="object-cover object-top"
+              />
             </div>
           </div>
 

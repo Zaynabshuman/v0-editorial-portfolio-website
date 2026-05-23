@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, Download } from 'lucide-react'
 
 export function HeroSection() {
@@ -71,15 +72,15 @@ export function HeroSection() {
               <ellipse cx="115" cy="130" rx="10" ry="18" stroke="currentColor" strokeWidth="1.5" transform="rotate(30 115 130)" />
             </svg>
 
-            {/* Portrait placeholder */}
+            {/* Portrait */}
             <div className="relative aspect-[3/4] w-full max-w-md overflow-hidden rounded-sm bg-secondary lg:max-w-lg">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="mx-auto mb-4 h-24 w-24 rounded-full bg-primary/10" />
-                  <p className="text-sm text-muted-foreground">Portrait Image</p>
-                  <p className="mt-1 text-xs text-muted-foreground/60">/profile-hero.png</p>
-                </div>
-              </div>
+              <Image
+                src="/images/zaynab-portrait.png"
+                alt="Zaynab Shuman - Programme Quality and MEAL Specialist"
+                fill
+                className="object-cover object-top"
+                priority
+              />
               {/* Corner frame accent */}
               <div className="absolute left-4 top-4 h-16 w-16 border-l-2 border-t-2 border-primary/30" />
               <div className="absolute bottom-4 right-4 h-16 w-16 border-b-2 border-r-2 border-primary/30" />
