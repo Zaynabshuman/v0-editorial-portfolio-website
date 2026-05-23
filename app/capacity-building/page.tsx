@@ -47,7 +47,7 @@ const trainings = [
   {
     number: '05',
     organization: 'SRA / Syria',
-    logo: '/images/logos/sri.png',
+    logo: '/images/logos/sra.jpg',
     title: 'Monitoring, Evaluation & Organizational Systems Training',
     description: 'Delivered technical trainings on monitoring & evaluation systems, TQM, HRM, and organizational development processes.',
     year: '2019',
@@ -175,26 +175,6 @@ export default function CapacityBuildingPage() {
                 />
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="bg-primary py-24 lg:py-32">
-          <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
-            <h2 className="font-serif text-3xl font-bold text-primary-foreground md:text-4xl lg:text-5xl">
-              Need Capacity Building Support?
-            </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80">
-              I design and deliver tailored training programs that strengthen 
-              organizational capabilities in MEAL, accountability, and programme quality.
-            </p>
-            <Link
-              href="/#contact"
-              className="mt-10 inline-flex items-center gap-2 bg-background px-8 py-4 font-medium text-foreground transition-all hover:bg-background/90"
-            >
-              Get in Touch
-              <ArrowRight className="h-4 w-4" />
-            </Link>
           </div>
         </section>
       </main>

@@ -8,7 +8,6 @@ import { PortfolioSection } from '@/components/portfolio-section'
 import { TestimonialsSection } from '@/components/testimonials-section'
 import { SkillsToolsSection } from '@/components/skills-tools-section'
 import { ContactSection } from '@/components/contact-section'
-import { Footer } from '@/components/footer'
 
 export default function Page() {
   return (
@@ -23,9 +22,8 @@ export default function Page() {
         <PortfolioSection />
         <TestimonialsSection />
         <SkillsToolsSection />
-        <ContactSection />
       </main>
-      <Footer />
+      <ContactSection />
     </>
   )
 }
