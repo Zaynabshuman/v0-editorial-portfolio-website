@@ -24,11 +24,8 @@ export function TestimonialsSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-medium uppercase tracking-[0.25em] text-primary">
-            Testimonials
-          </span>
-          <h3 className="mt-4 font-serif text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
-            Client Perspectives
+          <h3 className="font-serif text-3xl font-bold text-primary md:text-4xl">
+            Trusted From My Colleagues
           </h3>
         </div>
 
