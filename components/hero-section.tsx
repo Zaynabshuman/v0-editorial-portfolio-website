@@ -30,7 +30,9 @@ export function HeroSection() {
               </Link>
               
               <Link
-                href="/cv.pdf"
+                href="/zaynab-shuman-cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-primary"
               >
                 Download CV
