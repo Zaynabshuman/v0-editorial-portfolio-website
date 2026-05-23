@@ -54,20 +54,20 @@ export function PortfolioSection() {
           </h3>
         </div>
 
-        {/* Two-column grid */}
-        <div className="grid gap-x-16 gap-y-12 lg:grid-cols-2">
+        {/* Two-column grid with separator */}
+        <div className="grid gap-y-12 lg:grid-cols-[1fr_1px_1fr] lg:gap-x-12">
           {/* Left column */}
           <div className="space-y-12">
             {leftColumn.map((exp, index) => (
               <article key={index} className="group flex gap-5">
-                {/* Dot indicator */}
+                {/* Dot indicator - all green filled */}
                 <div className="mt-1.5 shrink-0">
-                  <div className={`h-3 w-3 rounded-full ${exp.filled ? 'bg-primary' : 'border-2 border-primary bg-transparent'}`} />
+                  <div className="h-3 w-3 rounded-full bg-primary" />
                 </div>
                 
                 {/* Content */}
                 <div className="flex-1">
-                  <span className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                  <span className="text-xs font-bold uppercase tracking-widest text-foreground">
                     {exp.period}
                   </span>
                   <h4 className="mt-2 font-serif text-lg font-semibold text-foreground md:text-xl">
@@ -84,18 +84,21 @@ export function PortfolioSection() {
             ))}
           </div>
 
+          {/* Green vertical separator */}
+          <div className="hidden bg-primary/40 lg:block" />
+
           {/* Right column */}
           <div className="space-y-12">
             {rightColumn.map((exp, index) => (
               <article key={index} className="group flex gap-5">
-                {/* Dot indicator */}
+                {/* Dot indicator - all green filled */}
                 <div className="mt-1.5 shrink-0">
-                  <div className={`h-3 w-3 rounded-full ${exp.filled ? 'bg-primary' : 'border-2 border-primary bg-transparent'}`} />
+                  <div className="h-3 w-3 rounded-full bg-primary" />
                 </div>
                 
                 {/* Content */}
                 <div className="flex-1">
-                  <span className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                  <span className="text-xs font-bold uppercase tracking-widest text-foreground">
                     {exp.period}
                   </span>
                   <h4 className="mt-2 font-serif text-lg font-semibold text-foreground md:text-xl">
