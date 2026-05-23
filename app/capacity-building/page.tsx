@@ -177,8 +177,26 @@ export default function CapacityBuildingPage() {
             </div>
           </div>
         </section>
+
+        {/* CTA Section */}
+        <section className="bg-primary py-16">
+          <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
+            <h3 className="font-serif text-2xl font-semibold text-primary-foreground">
+              Looking for Capacity Building Support?
+            </h3>
+            <p className="mt-4 text-primary-foreground/80">
+              Get in touch to discuss training, facilitation, or learning opportunities.
+            </p>
+            <Link
+              href="/#contact"
+              className="mt-8 inline-flex items-center gap-2 border border-primary-foreground bg-transparent px-8 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary"
+            >
+              Get in Touch
+            </Link>
+          </div>
+        </section>
       </main>
-      <Footer />
+      <ContactSection />
     </>
   )
 }
