@@ -37,7 +37,8 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          GITHUB_PAGES: true
+          GITHUB_PAGES: 'true'
+          NEXT_PUBLIC_BASE_PATH: '/v0-editorial-portfolio-website'
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
