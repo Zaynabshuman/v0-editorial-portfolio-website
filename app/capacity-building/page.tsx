@@ -125,12 +125,12 @@ export default function CapacityBuildingPage() {
                 </div>
                 <div className="mt-8 lg:mt-0">
                   <div className="flex items-center gap-4">
-                    <div className="relative h-14 w-14 overflow-hidden rounded-full bg-background p-2 shadow-sm">
+                    <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg border border-border bg-white p-2">
                       <Image
                         src={getImagePath(trainings[activeIndex].logo)}
                         alt={trainings[activeIndex].organization}
                         fill
-                        className="object-contain"
+                        className="object-contain p-1"
                       />
                     </div>
                     <div>
