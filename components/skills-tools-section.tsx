@@ -1,20 +1,18 @@
 'use client'
 
 const tools = [
-  { name: 'Power BI', category: 'Analytics' },
-  { name: 'Excel Automation', category: 'Analytics' },
-  { name: 'AI-Assisted Analysis', category: 'Analytics' },
-  { name: 'SPSS', category: 'Analytics' },
-  { name: 'R Studio', category: 'Analytics' },
-  { name: 'KoBoToolbox', category: 'Data Collection' },
-  { name: 'ODK / ONA', category: 'Data Collection' },
-  { name: 'Survey Design', category: 'Data Collection' },
-  { name: 'Data Cleaning & Validation', category: 'Data Collection' },
-  { name: 'Digital Reporting Systems', category: 'Systems' },
-  { name: 'Database Tracking Systems', category: 'Systems' },
-  { name: 'Information Management', category: 'Systems' },
-  { name: 'Microsoft 365 Suite', category: 'Systems' },
-  { name: 'Reporting Automation', category: 'Systems' },
+  'Power BI Dashboard Development',
+  'Excel Automation & Data Visualization',
+  'AI-Assisted Analysis',
+  'Reporting Automation',
+  'SPSS',
+  'R Studio',
+  'KoBoToolbox / ODK / ONA',
+  'Digital Reporting Systems',
+  'Data Cleaning & Validation',
+  'Survey Design & Information Management',
+  'Database Tracking Systems',
+  'Microsoft 365 Suite',
 ]
 
 export function SkillsToolsSection() {
@@ -36,7 +34,7 @@ export function SkillsToolsSection() {
               className="group relative overflow-hidden rounded-full border border-primary/20 bg-background px-5 py-2.5 transition-all hover:border-primary hover:shadow-sm"
             >
               <span className="text-sm font-medium text-foreground transition-colors group-hover:text-primary">
-                {tool.name}
+                {tool}
               </span>
             </div>
           ))}
