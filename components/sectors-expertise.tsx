@@ -84,7 +84,7 @@ export function SectorsExpertise() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-16 text-center">
-          <h3 className="font-serif text-3xl font-bold text-foreground md:text-4xl">
+          <h3 className="font-serif text-3xl font-bold text-primary md:text-4xl">
             Sector Expertise
           </h3>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">

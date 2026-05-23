@@ -29,7 +29,7 @@ export function AboutPreview() {
 
           {/* Content */}
           <div className="lg:col-span-8">
-            <h3 className="font-serif text-3xl font-bold text-foreground md:text-4xl">
+            <h3 className="font-serif text-3xl font-bold text-primary md:text-4xl">
               About
             </h3>
             

@@ -46,7 +46,7 @@ export function ExpertiseSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-2xl">
-          <h3 className="font-serif text-3xl font-bold text-foreground md:text-4xl">
+          <h3 className="font-serif text-3xl font-bold text-primary md:text-4xl">
             Specialized Knowledge
           </h3>
         </div>

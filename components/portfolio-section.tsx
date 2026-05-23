@@ -49,7 +49,7 @@ export function PortfolioSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-16 text-center">
-          <h3 className="font-serif text-3xl font-bold text-foreground md:text-4xl">
+          <h3 className="font-serif text-3xl font-bold text-primary md:text-4xl">
             Leadership Experience
           </h3>
         </div>
