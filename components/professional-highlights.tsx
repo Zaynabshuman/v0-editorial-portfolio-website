@@ -11,14 +11,13 @@ const highlights = [
   },
   {
     number: '15+',
-    label: 'International Organizations',
+    label: 'INGOs',
     description: 'INGOs, UN Agencies & Consortiums',
   },
   {
-    number: 'Multi-Country',
-    label: '',
+    number: 'Multi',
+    label: 'Country',
     description: 'Lebanon, Syria Response, MENA',
-    isGreen: true,
   },
 ]
 
