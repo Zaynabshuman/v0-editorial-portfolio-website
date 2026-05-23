@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
+import { ContactSection } from '@/components/contact-section'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { useState } from 'react'
 
