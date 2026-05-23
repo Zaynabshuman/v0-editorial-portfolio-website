@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const isGithubPages = process.env.GITHUB_PAGES === 'true'
+
 const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
@@ -6,8 +8,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/v0-editorial-portfolio-website' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/v0-editorial-portfolio-website/' : '',
+  basePath: isGithubPages ? '/v0-editorial-portfolio-website' : '',
+  assetPrefix: isGithubPages ? '/v0-editorial-portfolio-website/' : '',
   output: 'export',
 }
 
