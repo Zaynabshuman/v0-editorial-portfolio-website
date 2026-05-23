@@ -43,8 +43,10 @@ export function ProfessionalHighlights() {
                 {/* Decorative line */}
                 <div className="absolute -top-4 left-1/2 h-8 w-px -translate-x-1/2 bg-primary/20" />
                 
-                <div className={`font-serif font-semibold ${item.isGreen ? 'text-2xl text-primary md:text-3xl lg:text-4xl' : 'text-4xl text-primary md:text-5xl lg:text-6xl'}`}>
-                  {item.number}
+                <div className="flex h-[72px] items-end justify-center md:h-[84px] lg:h-[96px]">
+                  <div className="font-serif text-4xl font-semibold text-primary md:text-5xl lg:text-6xl">
+                    {item.number}
+                  </div>
                 </div>
                 {item.label && (
                   <div className="mt-2 text-sm font-medium uppercase tracking-wider text-foreground">
