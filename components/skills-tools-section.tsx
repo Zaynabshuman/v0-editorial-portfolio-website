@@ -1,6 +1,3 @@
-'use client'
-
-import { useEffect, useRef } from 'react'
 import { 
   BarChart3, 
   Table2, 
@@ -32,42 +29,6 @@ const tools = [
 ]
 
 export function SkillsToolsSection() {
-  const scrollRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const scrollContainer = scrollRef.current
-    if (!scrollContainer) return
-
-    let animationId: number
-    let scrollPos = 0
-    const speed = 0.5
-
-    const scroll = () => {
-      scrollPos += speed
-      if (scrollPos >= scrollContainer.scrollWidth / 2) {
-        scrollPos = 0
-      }
-      scrollContainer.scrollLeft = scrollPos
-      animationId = requestAnimationFrame(scroll)
-    }
-
-    animationId = requestAnimationFrame(scroll)
-
-    const handleMouseEnter = () => cancelAnimationFrame(animationId)
-    const handleMouseLeave = () => {
-      animationId = requestAnimationFrame(scroll)
-    }
-
-    scrollContainer.addEventListener('mouseenter', handleMouseEnter)
-    scrollContainer.addEventListener('mouseleave', handleMouseLeave)
-
-    return () => {
-      cancelAnimationFrame(animationId)
-      scrollContainer.removeEventListener('mouseenter', handleMouseEnter)
-      scrollContainer.removeEventListener('mouseleave', handleMouseLeave)
-    }
-  }, [])
-
   return (
     <section className="bg-secondary py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -77,28 +38,18 @@ export function SkillsToolsSection() {
             Skills & Tools
           </h3>
         </div>
-      </div>
 
-      {/* Scrolling marquee */}
-      <div className="relative mt-12 overflow-hidden">
-        {/* Gradient fades */}
-        <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-secondary to-transparent" />
-        <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-secondary to-transparent" />
-        
-        <div
-          ref={scrollRef}
-          className="flex gap-4 overflow-x-hidden"
-        >
-          {/* Double the items for seamless loop */}
-          {[...tools, ...tools].map((tool, index) => (
+        {/* Tools grid - 4 columns on desktop, 3 on tablet, 2 on mobile */}
+        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          {tools.map((tool, index) => (
             <div
               key={index}
-              className="group flex shrink-0 items-center gap-3 rounded-lg border border-primary/10 bg-background px-6 py-4 transition-all hover:border-primary hover:shadow-md"
+              className="group flex flex-col items-center gap-3 rounded-lg border border-primary/10 bg-background p-6 text-center transition-all hover:border-primary hover:shadow-md"
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary">
-                <tool.icon className="h-5 w-5 text-primary transition-colors group-hover:text-primary-foreground" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary">
+                <tool.icon className="h-6 w-6 text-primary transition-colors group-hover:text-primary-foreground" />
               </div>
-              <span className="whitespace-nowrap text-sm font-medium text-foreground">
+              <span className="text-sm font-medium leading-tight text-foreground">
                 {tool.name}
               </span>
             </div>
