@@ -10,7 +10,7 @@ const highlights = [
     description: 'FCDO, USAID, EU, BMZ, UNICEF',
   },
   {
-    number: '12+',
+    number: '25+',
     label: 'Organizations',
     description: 'INGOs, UN Agencies & Consortiums',
   },
