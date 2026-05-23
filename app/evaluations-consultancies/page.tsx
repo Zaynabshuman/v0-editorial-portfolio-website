@@ -7,7 +7,7 @@ import { ArrowLeft } from 'lucide-react'
 const projects = [
   {
     number: '01',
-    logo: '/images/logos/sri.png',
+    logo: '/images/logos/norad.jpg',
     title: 'NORAD Final Evaluation – Livelihoods Programme',
     organization: 'CARE Syria / SRI Consortium – Syria',
     description: 'Led the final evaluation process for a NORAD-funded livelihoods programme implemented within the Syria Resilience Initiative (SRI), overseeing evaluation coordination, evidence synthesis, learning integration, stakeholder engagement, and donor-facing analytical processes. Supported strategic reflection on programme effectiveness, sustainability, adaptive learning, and evidence-informed recommendations across complex resilience programming contexts.',
@@ -34,7 +34,7 @@ const projects = [
   },
   {
     number: '04',
-    logo: '/images/logos/relief.png',
+    logo: '/images/logos/usaid.png',
     title: 'BHA Health Sector Project Evaluation',
     organization: 'Relief International – Lebanon',
     description: 'Oversaw the evaluation of a BHA-funded health intervention, including partner monitoring processes, third-party data triangulation, evidence synthesis, and donor-aligned analytical reporting supporting programme accountability and operational learning.',
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     number: '05',
-    logo: '/images/logos/relief.png',
+    logo: '/images/logos/usaid.png',
     title: 'PRM Education Sector Endline Evaluation',
     organization: 'Relief International – Lebanon',
     description: 'Managed the endline evaluation of an inclusive education intervention funded by PRM, integrating outcome tracking, qualitative learning components, evidence analysis, and programme adaptation recommendations.',
