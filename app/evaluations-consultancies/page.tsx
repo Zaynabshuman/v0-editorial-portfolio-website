@@ -70,7 +70,7 @@ const projects = [
   },
   {
     number: '08',
-    logo: '/images/logos/care.png',
+    logo: ['/images/logos/care.png', '/images/logos/relief.png'],
     title: 'Multi-Sector Needs Assessments (MSNA)',
     organization: 'CARE International & Relief International',
     description: 'Led mixed-method multi-sector needs assessments supporting programme design, strategic targeting, operational planning, and evidence-based humanitarian response across complex emergency and resilience contexts.',
@@ -146,15 +146,28 @@ export default function EvaluationsPage() {
                 </div>
 
                 {/* Logo */}
-                <div className="flex h-16 w-28 items-center justify-center rounded bg-white p-2 shadow-sm">
-                  <div className="relative h-full w-full">
-                    <Image
-                      src={project.logo}
-                      alt={project.organization}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+                <div className="flex h-16 w-28 items-center justify-center gap-2 rounded bg-white p-2 shadow-sm">
+                  {Array.isArray(project.logo) ? (
+                    project.logo.map((logoSrc, logoIndex) => (
+                      <div key={logoIndex} className="relative h-full w-1/2">
+                        <Image
+                          src={logoSrc}
+                          alt={project.organization}
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                    ))
+                  ) : (
+                    <div className="relative h-full w-full">
+                      <Image
+                        src={project.logo}
+                        alt={project.organization}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  )}
                 </div>
 
                 {/* Content */}
