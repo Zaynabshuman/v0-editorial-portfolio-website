@@ -7,7 +7,6 @@ import { ExpertiseSection } from '@/components/expertise-section'
 import { PortfolioSection } from '@/components/portfolio-section'
 import { TestimonialsSection } from '@/components/testimonials-section'
 import { SkillsToolsSection } from '@/components/skills-tools-section'
-import { CtaSection } from '@/components/cta-section'
 import { ContactSection } from '@/components/contact-section'
 
 export default function Page() {
@@ -23,7 +22,6 @@ export default function Page() {
         <PortfolioSection />
         <TestimonialsSection />
         <SkillsToolsSection />
-        <CtaSection />
       </main>
       <ContactSection />
     </>

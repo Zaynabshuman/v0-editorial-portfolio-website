@@ -203,17 +203,17 @@ export default function EvaluationsPage() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-border bg-secondary/30 py-16">
+      <section className="bg-primary py-16">
         <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
-          <h3 className="font-serif text-2xl font-semibold text-foreground">
+          <h3 className="font-serif text-2xl font-semibold text-primary-foreground">
             Interested in working together?
           </h3>
-          <p className="mt-4 text-muted-foreground">
+          <p className="mt-4 text-primary-foreground/80">
             Get in touch to discuss evaluation, MEAL, or consultancy opportunities.
           </p>
           <Link
             href="/#contact"
-            className="mt-8 inline-flex items-center gap-2 bg-primary px-8 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            className="mt-8 inline-flex items-center gap-2 border border-primary-foreground bg-transparent px-8 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary"
           >
             Contact Me
           </Link>
