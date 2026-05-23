@@ -1,4 +1,4 @@
-import { Mail, MapPin } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
 
 export function ContactSection() {
@@ -87,6 +87,17 @@ export function ContactSection() {
                 <Mail className="h-4 w-4 text-primary-foreground" />
               </div>
               <span className="text-sm text-primary-foreground">zaynabshuman@outlook.com</span>
+            </a>
+
+            {/* Phone */}
+            <a 
+              href="tel:+96181919626"
+              className="flex items-center gap-4 transition-opacity hover:opacity-80"
+            >
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground/20">
+                <Phone className="h-4 w-4 text-primary-foreground" />
+              </div>
+              <span className="text-sm text-primary-foreground">+961 81919626</span>
             </a>
           </div>
         </div>
