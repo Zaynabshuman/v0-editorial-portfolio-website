@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
+import { getImagePath } from '@/lib/utils'
 
 export function AboutPreview() {
   return (
@@ -18,7 +19,7 @@ export function AboutPreview() {
               {/* Portrait Image */}
               <div className="relative h-full w-full overflow-hidden">
                 <Image
-                  src="/images/zaynab-portrait.png"
+                  src={getImagePath("/images/zaynab-portrait.png")}
                   alt="Zaynab Shuman"
                   fill
                   className="object-cover object-[center_20%]"

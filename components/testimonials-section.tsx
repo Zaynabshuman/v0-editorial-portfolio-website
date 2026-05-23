@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
+import { getImagePath } from '@/lib/utils'
 
 const testimonials = [
   {
@@ -133,7 +134,7 @@ export function TestimonialsSection() {
                 <footer className="mt-8 flex items-center gap-4">
                   <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border-2 border-primary/20">
                     <Image
-                      src={testimonial.image}
+                      src={getImagePath(testimonial.image)}
                       alt={testimonial.name}
                       fill
                       className="object-cover"

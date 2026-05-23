@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
+import { getImagePath } from '@/lib/utils'
 
 const projects = [
   {
@@ -151,7 +152,7 @@ export default function EvaluationsPage() {
                     project.logo.map((logoSrc, logoIndex) => (
                       <div key={logoIndex} className="relative h-full w-1/2">
                         <Image
-                          src={logoSrc}
+                          src={getImagePath(logoSrc)}
                           alt={project.organization}
                           fill
                           className="object-contain"
@@ -161,7 +162,7 @@ export default function EvaluationsPage() {
                   ) : (
                     <div className="relative h-full w-full">
                       <Image
-                        src={project.logo}
+                        src={getImagePath(project.logo)}
                         alt={project.organization}
                         fill
                         className="object-contain"

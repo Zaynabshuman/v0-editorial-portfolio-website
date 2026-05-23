@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRight, Download } from 'lucide-react'
+import { getImagePath } from '@/lib/utils'
 
 export function HeroSection() {
   return (
@@ -77,7 +78,7 @@ export function HeroSection() {
             {/* Portrait */}
             <div className="relative aspect-[3/4] w-full max-w-md overflow-hidden rounded-sm bg-secondary lg:max-w-lg">
               <Image
-                src="/images/zaynab-portrait.png"
+                src={getImagePath("/images/zaynab-portrait.png")}
                 alt="Zaynab Shuman - Programme Quality and MEAL Specialist"
                 fill
                 className="object-cover object-top"

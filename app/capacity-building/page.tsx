@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Header } from '@/components/header'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { useState } from 'react'
+import { getImagePath } from '@/lib/utils'
 
 const trainings = [
   {
@@ -126,7 +127,7 @@ export default function CapacityBuildingPage() {
                   <div className="flex items-center gap-4">
                     <div className="relative h-14 w-14 overflow-hidden rounded-full bg-background p-2 shadow-sm">
                       <Image
-                        src={trainings[activeIndex].logo}
+                        src={getImagePath(trainings[activeIndex].logo)}
                         alt={trainings[activeIndex].organization}
                         fill
                         className="object-contain"

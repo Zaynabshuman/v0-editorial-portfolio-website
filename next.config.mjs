@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isGithubPages = process.env.GITHUB_PAGES === 'true'
+const repoName = '/v0-editorial-portfolio-website'
 
 const nextConfig = {
   typescript: {
@@ -8,9 +9,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isGithubPages ? '/v0-editorial-portfolio-website' : '',
-  assetPrefix: isGithubPages ? '/v0-editorial-portfolio-website/' : '',
+  basePath: isGithubPages ? repoName : '',
+  assetPrefix: isGithubPages ? `${repoName}/` : '',
   output: 'export',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubPages ? repoName : '',
+  },
 }
 
 export default nextConfig
