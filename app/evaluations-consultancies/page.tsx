@@ -7,7 +7,7 @@ import { ArrowLeft } from 'lucide-react'
 const projects = [
   {
     number: '01',
-    logo: '/images/logos/syria-resilience.png',
+    logo: '/images/logos/sri.png',
     title: 'NORAD Final Evaluation – Livelihoods Programme',
     organization: 'CARE Syria / SRI Consortium – Syria',
     description: 'Led the final evaluation process for a NORAD-funded livelihoods programme implemented within the Syria Resilience Initiative (SRI), overseeing evaluation coordination, evidence synthesis, learning integration, stakeholder engagement, and donor-facing analytical processes. Supported strategic reflection on programme effectiveness, sustainability, adaptive learning, and evidence-informed recommendations across complex resilience programming contexts.',
@@ -34,7 +34,7 @@ const projects = [
   },
   {
     number: '04',
-    logo: '/images/logos/relief-international.png',
+    logo: '/images/logos/relief.png',
     title: 'BHA Health Sector Project Evaluation',
     organization: 'Relief International – Lebanon',
     description: 'Oversaw the evaluation of a BHA-funded health intervention, including partner monitoring processes, third-party data triangulation, evidence synthesis, and donor-aligned analytical reporting supporting programme accountability and operational learning.',
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     number: '05',
-    logo: '/images/logos/relief-international.png',
+    logo: '/images/logos/relief.png',
     title: 'PRM Education Sector Endline Evaluation',
     organization: 'Relief International – Lebanon',
     description: 'Managed the endline evaluation of an inclusive education intervention funded by PRM, integrating outcome tracking, qualitative learning components, evidence analysis, and programme adaptation recommendations.',
@@ -79,7 +79,7 @@ const projects = [
   },
   {
     number: '09',
-    logo: '/images/logos/care.png',
+    logo: '/images/logos/bmz.png',
     title: 'BMZ Livelihood Programme Mid-Term Evaluation',
     organization: 'CARE International – Lebanon',
     description: 'Led a comprehensive mid-term evaluation for a development-focused livelihoods programme funded by BMZ, supporting evidence generation, programme adaptation, donor accountability, and strategic learning.',
@@ -88,7 +88,7 @@ const projects = [
   },
   {
     number: '10',
-    logo: '/images/logos/lebanese-red-cross.png',
+    logo: '/images/logos/lrc.png',
     title: 'ADH Emergency WASH Project Evaluation',
     organization: 'Lebanese Red Cross – Lebanon',
     description: 'Directed a results-based evaluation aligned with ADH donor indicators for emergency WASH interventions, supporting programme performance analysis, accountability, and operational learning.',
