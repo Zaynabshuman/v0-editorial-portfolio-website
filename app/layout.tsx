@@ -16,12 +16,12 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: 'Zaynab Shuman | Senior Programme Quality, MEAL & Adaptive Management Specialist',
-  description: 'Senior Programme Quality and MEAL professional supporting humanitarian and development actors through accountability, evaluations, learning systems, and evidence-informed decision-making.',
+  description: 'Senior Programme Quality and MEAL professional supporting organizations through accountability, evaluations, learning systems, and evidence-informed decision-making.',
   keywords: ['MEAL', 'Programme Quality', 'Humanitarian', 'Development', 'Monitoring', 'Evaluation', 'Accountability', 'Learning'],
   authors: [{ name: 'Zaynab Shuman' }],
   openGraph: {
     title: 'Zaynab Shuman | Senior Programme Quality, MEAL & Adaptive Management Specialist',
-    description: 'Senior Programme Quality and MEAL professional supporting humanitarian and development actors.',
+    description: 'Senior Programme Quality and MEAL professional supporting organizations through evidence-informed decision-making.',
     type: 'website',
   },
 }

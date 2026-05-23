@@ -18,8 +18,8 @@ export function Footer() {
               </p>
             </Link>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-background/70">
-              Supporting humanitarian and development actors through evidence-informed 
-              decision-making and robust MEAL systems.
+              Supporting organizations through evidence-informed decision-making 
+              and robust MEAL systems.
             </p>
           </div>
 

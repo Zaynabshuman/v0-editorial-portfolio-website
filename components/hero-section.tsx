@@ -8,12 +8,6 @@ export function HeroSection() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Content */}
           <div className="relative z-10 max-w-2xl">
-            <div className="mb-6">
-              <span className="inline-block text-xs font-medium uppercase tracking-[0.25em] text-primary">
-                Humanitarian & Development Specialist
-              </span>
-            </div>
-            
             <h2 className="font-serif text-5xl font-semibold leading-[1.1] text-primary md:text-6xl lg:text-7xl">
               <span className="block">Zaynab</span>
               <span className="block">Shuman</span>
@@ -21,8 +15,8 @@ export function HeroSection() {
             
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
               Senior Programme Quality, MEAL and Adaptive Management Specialist supporting 
-              humanitarian and development actors through accountability, evaluations, 
-              learning systems, and evidence-informed decision-making.
+              organizations through accountability, evaluations, learning systems, and 
+              evidence-informed decision-making.
             </p>
             
             <div className="mt-10 flex flex-wrap items-center gap-4">

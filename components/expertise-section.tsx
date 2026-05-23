@@ -31,10 +31,7 @@ export function ExpertiseSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-2xl">
-          <span className="text-xs font-medium uppercase tracking-[0.25em] text-primary">
-            Areas of Expertise
-          </span>
-          <h3 className="mt-4 font-serif text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
+          <h3 className="font-serif text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
             Specialized Knowledge
           </h3>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
