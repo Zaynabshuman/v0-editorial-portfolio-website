@@ -146,9 +146,6 @@ export function TestimonialsSection() {
                     <span className="mt-0.5 block text-xs text-primary">
                       {testimonial.title}
                     </span>
-                    <span className="mt-0.5 block truncate text-xs text-muted-foreground">
-                      {testimonial.subtitle}
-                    </span>
                   </div>
                 </footer>
               </blockquote>
