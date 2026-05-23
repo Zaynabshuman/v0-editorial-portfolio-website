@@ -116,13 +116,15 @@ export function PortfolioSection() {
           </div>
         </div>
 
-        {/* View more link */}
+        {/* Download CV link */}
         <div className="mt-16 text-center">
           <Link
-            href="#contact"
+            href="/zaynab-shuman-cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
           >
-            Get in touch for full CV
+            Download Full CV
             <span aria-hidden="true">→</span>
           </Link>
         </div>
