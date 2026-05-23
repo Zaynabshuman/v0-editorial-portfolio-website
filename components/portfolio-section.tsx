@@ -119,8 +119,9 @@ export function PortfolioSection() {
         {/* Download CV link */}
         <div className="mt-16 text-center">
           <a
-            href="/zaynab-shuman-cv.pdf"
-            download="Zaynab-Shuman-CV.pdf"
+            href="https://blobs.vusercontent.net/blob/zaynab-shuman-cv-0gnHJ4DdfUDmwEw6tVgu0jtP9wHdaZ.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
           >
             Download Full CV
