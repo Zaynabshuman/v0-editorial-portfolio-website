@@ -15,9 +15,10 @@ const highlights = [
     description: 'INGOs, UN Agencies & Consortiums',
   },
   {
-    number: 'Multi',
-    label: 'Country',
+    number: 'Multi-Country',
+    label: '',
     description: 'Lebanon, Syria Response, MENA',
+    isGreen: true,
   },
 ]
 
@@ -43,12 +44,14 @@ export function ProfessionalHighlights() {
                 {/* Decorative line */}
                 <div className="absolute -top-4 left-1/2 h-8 w-px -translate-x-1/2 bg-primary/20" />
                 
-                <div className="font-serif text-4xl font-semibold text-primary md:text-5xl lg:text-6xl">
+                <div className={`font-serif text-4xl font-semibold md:text-5xl lg:text-6xl ${item.isGreen ? 'text-primary' : 'text-primary'}`}>
                   {item.number}
                 </div>
-                <div className="mt-2 text-sm font-medium uppercase tracking-wider text-foreground">
-                  {item.label}
-                </div>
+                {item.label && (
+                  <div className="mt-2 text-sm font-medium uppercase tracking-wider text-foreground">
+                    {item.label}
+                  </div>
+                )}
                 <div className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {item.description}
                 </div>
