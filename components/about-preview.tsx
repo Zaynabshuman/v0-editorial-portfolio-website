@@ -10,9 +10,10 @@ export function AboutPreview() {
           {/* Portrait */}
           <div className="lg:col-span-4">
             <div className="relative mx-auto aspect-[3/4] w-full max-w-[280px] overflow-hidden bg-background">
-              {/* Editorial corner frame */}
-              <div className="absolute -left-2 -top-2 z-10 h-16 w-16 border-l border-t border-primary/40" />
-              <div className="absolute -bottom-2 -right-2 z-10 h-16 w-16 border-b border-r border-primary/40" />
+              {/* Bold left-sided green frame */}
+              <div className="absolute -left-3 top-0 z-10 h-full w-1 bg-primary" />
+              <div className="absolute -left-3 top-0 z-10 h-1 w-12 bg-primary" />
+              <div className="absolute -left-3 bottom-0 z-10 h-1 w-12 bg-primary" />
               
               {/* Portrait Image */}
               <Image
