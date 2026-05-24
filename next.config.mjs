@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isGithubPages = process.env.GITHUB_PAGES === 'true'
-const repoName = '/v0-editorial-portfolio-website'
+const repoName = '/zaynab-shuman-portfolio'
 
 const nextConfig = {
   typescript: {
